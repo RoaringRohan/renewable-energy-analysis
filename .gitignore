@@ -1,0 +1,17 @@
+# Data (not distributed with this repository - see the README)
+*.csv
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor / OS cruft
+.DS_Store
+__MACOSX/
+Thumbs.db
+.vscode/
