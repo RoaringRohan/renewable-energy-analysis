@@ -72,8 +72,10 @@ network, the trees win outright on training cost and interpretability, and the n
 
 ## Data
 
-**The dataset is not included in this repository.** The notebook expects a CSV at `./Renewable.csv`
-with one row per hour and these columns:
+**The dataset is not included in this repository.** It is
+[Renewable Power Generation and Weather Conditions](https://www.kaggle.com/datasets/pythonafroz/renewable-power-generation-and-weather-conditions)
+on Kaggle — download it, rename the CSV to `Renewable.csv`, and put it beside the notebook. The
+notebook expects one row per hour and these columns:
 
 | Column | Meaning |
 |---|---|
@@ -96,7 +98,7 @@ pip install -r requirements.txt
 jupyter notebook analysis.ipynb
 ```
 
-Put your `Renewable.csv` beside the notebook first.
+Download the Kaggle dataset above and put it beside the notebook as `Renewable.csv` first.
 
 **Keep the scikit-learn pin.** `requirements.txt` pins `scikit-learn<1.6` deliberately: the notebook
 calls `mean_squared_error(..., squared=False)`, which was deprecated in 1.4 and **removed in 1.6**, so
